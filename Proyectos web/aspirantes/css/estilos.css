@@ -1,0 +1,149 @@
+/*reset del documento*/
+/* *= selector universla aplica para todas las etiquetas
+La propiedad box-sizing se usa para modificar las propiedades por defecto del CSS box model que calculan el alto y el ancho de los elementos*/ 
+/*
+Estas son las propiedades con prefijo de proveedor que ofrecen los motores de representación relevantes (-webkit para Chrome, Safari; -moz para Firefox, -o para Opera, -ms para Internet Explorer). Por lo general, se utilizan para implementar funciones CSS nuevas o patentadas, antes de la aclaración / definición final por parte del W3.*/
+*{
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   }
+
+
+body{
+	background: #ECD2F8;
+	margin:10px;
+}
+
+
+@font-face {/*permite al autor especificar fuentes*/
+  font-family: 'Metal Mania';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Metal_Mania/MetalMania-Regular.ttf');
+}
+
+p {
+  font-family: 'Metal Mania', cursive;
+  font-size: 150%;
+  text-align: center;
+}
+
+
+
+
+
+h2{
+	text-align: center;
+	font-size: 30px;
+}
+
+.mayusculas{
+
+	text-transform: uppercase;
+}
+
+
+input[type=text],input[type=tel],input[type=email],select,textarea{
+	width: 100%;
+	padding:12px;
+	border:  1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;/*La propiedad resize de CSS permite controlar la capacidad de cambio de tamaño de un elemento.*/
+	
+}
+
+label{
+	padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
+	float: right;
+}
+
+input[type=submit]{
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	cursor: pointer;
+	float: right ;
+}
+
+.container{
+	border-radius: 5px;
+	background-color: rgb(57,207,102,0.3);
+	padding: 20px;
+}
+
+
+.col-25{
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.col-75{
+	float: left;
+	width: 55%;
+	margin-top: 6px;
+}
+
+
+/*
+::after (:after)
+En CSS, ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado. 
+Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.
+Es en linea (inline) de forma predeterminada.
+*/
+
+
+/*La propiedad CSS clear especifica si un elemento puede estar al lado de elementos flotantes 
+que lo preceden o si debe ser movido (cleared) debajo de ellos. La propiedad clear aplica a ambos 
+elementos flotantes y no flotantes.*/
+
+/*both
+Es un keyword que indica que el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha.*/
+.row:after{
+	content: "";/*Se usa generalmente para añadir contenido estético a un elemento, usando la propiedad CSS content*/
+	display: table;
+	clear: both;
+}
+
+.row2{
+	text-align: center;
+	padding: 10px 10px, 10px 10px;
+}
+
+.boton{
+	margin-top: 15px;
+}
+
+/*ligado con el required*/
+select,input:optional {
+  border-color: gray;
+}
+select,input:valid {
+  border-color: green;
+}
+select,input:invalid {
+  border-color: red;
+}
+
+
+/*Diseño receptivo: cuando la pantalla tiene al 
+menos de 600 píxeles de ancho, 
+haga que las dos columnas se apilen una 
+encima de la otra en lugar de una al lado de la otra */
+@media screen  and (max-width: 600px){
+	.col25,.col-75,input[type=submit]{
+		width: 100%;
+		margin-top: 0;
+	}
+
+    label {
+    padding: 12px 12px 12px 0;/*padding-top, padding-right, padding-bottom, and padding-left*/
+    float: left;
+    margin: 0px;
+}
+
+
+
+}
