@@ -1,0 +1,93 @@
+$main: 
+
+$enter
+    @[ @( $integer $contador @) @]
+    @[ @( $integer $seleccionoperacionprueba @) @]
+    @[ @( $integer $result @) @]
+    @[ @( $real $contador2 @) @]
+    @[ @( $real $parasuppose @) @]
+    @[ @( $real $num1 @) @]
+    @[ @( $real $num2 @) @]
+    @[ @( $string $nombreprueba @) @]
+
+$Get @[ "Ingrese el valor del contador 1 " $contador @].
+$Get @[ "Ingrese el valor del contador 2 " $contador2 @].
+$Get @[ "Ingrese el nombre de quien quiere probar " $nombreprueba @].
+
+$for @(  $i <:- ~1 ; $i %=% $contador ; $i <+ @)
+    @{
+        $Out @[ "Iteraciones for de prueba de " $nombreprueba @].
+        $for @(  $i <:- ~1 ; $i %=% $contador ; $i <+ @)
+        @{
+            $Out @[ "Iteraciones for de prueba de " $nombreprueba @].
+            $for @(  $i <:- ~1 ; $i %=% $contador ; $i <+ @)
+            @{
+                $Out @[ "Iteraciones for de prueba de " $nombreprueba @].
+                $for @(  $i <:- ~1 ; $i %=% $contador ; $i <+ @)
+                @{
+                        $Out @[ "Iteraciones for de prueba de " $nombreprueba @].
+                @}.
+            @}.
+        @}.
+    @}.
+
+$while @( $contador2 @<= ~2 @)
+    @{
+        $Out @[ 'Iteraciones while de prueba de ' $nombreprueba @].
+    @}.
+
+$Repeat @{
+            $Out @[ "Iteraciones Repeat de prueba de " $nombreprueba @]. 
+        @}
+        @( $contador @>= ~5.5 @).
+
+$Get @[ "Ingresa 1 para suma 2 para resta 3 para multiplicacion y 4 para division " $seleccionoperacionprueba @].
+$Get @[ "Ingresa el primer numero " $num1 @].
+$Get @[ "Ingresa el segundo numero " $num2 @].
+
+$cases $seleccionoperacionprueba @[
+    $case ~1 
+    @{
+        $result <:- @( @( $num1 + $num2 @) @) .
+        @}
+    $case ~2
+    @{
+        $result <:- $num1 - $num2 .
+        @}
+    $case ~3 
+    @{
+        $result <:- $num1 $* $num2 .
+        @}
+    $case ~4 
+    @{
+        $result <:- $num1 @/ $num2 .
+        @}
+    @].
+
+$parasuppose <:- ~3e5 .
+
+$suppose @( $num1 @> $parasuppose @)
+    @{
+        $Out @[ "el numero 1 es mayor que " $parasuppose @].
+        $suppose @( $num1 @> $parasuppose @)
+        @{
+            $Out @[ "el numero 1 es mayor que " $parasuppose @].
+            $suppose @( $num1 @> $parasuppose @)
+            @{
+                $Out @[ "el numero 1 es mayor que " $parasuppose @].
+                $suppose @( $num1 @> $parasuppose @)
+                @{
+                    $Out @[ "el numero 1 es mayor que " $parasuppose @].
+                @}.
+            @}.
+        @}.
+    @}.
+
+$parasuppose <:- ~4.16e2 .
+
+$suppose ! @( $num2 @< $parasuppose @)
+    @{
+        $Out @[ "el numero 2 es menor que " $parasuppose @].
+    @}.
+
+$Finishing

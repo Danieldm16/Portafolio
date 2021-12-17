@@ -1,0 +1,10 @@
+$main: 
+
+$enter
+    @[ @( $string $nombre @) @]
+
+$Get @[ "Ingresa tu nombre " $nombre @].
+
+$Out @[ "Hola " $nombre @].
+
+$Finishing

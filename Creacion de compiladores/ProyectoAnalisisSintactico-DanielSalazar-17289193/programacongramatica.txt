@@ -1,0 +1,24 @@
+$main: 
+
+$enter
+    @[ @( $integer $nummaterias @) @]
+    @[ @( $integer $calificacion @) @]
+    @[ @( $integer $califacum @) @]
+    @[ @( $integer $promedio @) @]
+    @[ @( $string $nombrealumno @) @]
+
+$Get @[ "Ingrese el numero de materias " $nummaterias @].
+$Get @[ "Ingrese el nombre del alumno " $nombrealumno @].
+$califacum <:- ~0 .
+
+$for @(  $i <:- ~1 ; $i %=% $nummaterias ; $i <+ @)
+    @{
+        $Get @[ "Ingrese la calificacion del alumno en esta materia " $calificacion @].
+        $califacum <:- $califacum + $calificacion .
+    @}.
+
+$promedio <:- $califacum @/ $nummaterias .
+
+$Out @[ "El promedio del alumno es " $promedio @].
+
+$Finishing

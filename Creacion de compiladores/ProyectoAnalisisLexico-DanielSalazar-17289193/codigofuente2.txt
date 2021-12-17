@@ -1,0 +1,16 @@
+$Out@("Programa para sumar restar dividir o multiplicar 2 numeros"@)
+
+$n1 <:- $Get@("Introduce el primer numero: "@)
+$n2 <:- $Get@("Introduce el segundo numero: "@)
+$opcion <:- $Get@("Que quieres hacer con ellos? @(1 suma, 2 resta, 3 dividir, 4 multiplicar@): "@)
+
+$suppose $opcion %=% 1:
+	$n3 <:- $n1 + $n2
+$suppose $opcion %=% 2:
+	$n3 <:- $n1 - $n2
+$suppose $opcion %=% 3:
+	$n3 <:- $n1 @/ $n2
+$suppose $opcion %=% 4:
+	$n3 <:- $n1 $* $n2
+
+$Out@("Tu operacion da como resultado: " $n3 @)

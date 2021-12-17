@@ -1,0 +1,7 @@
+~16 - ~12.5 <:- 3.5
+~16e16 - ~12.5e42 <:- 2
+$Out "prueba"
+$ @ x
+$suppose ~12.5 @< ~28
+$suppose ~28 @> ~12.5
+" ' //comentario

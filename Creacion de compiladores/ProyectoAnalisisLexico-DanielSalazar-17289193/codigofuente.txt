@@ -1,0 +1,53 @@
+~16
+~15e42
+~12.89
+~10.57e45
+$indenti_fi4-cador
+$suppose
+$while
+$Repeat
+$for
+$enter
+$Finishing
+$Out
+$Get
+<  +
+<  -
+$*
+@/
+-
++
+@{
+@}
+@(
+@)
+@|
+@&
+@[
+@]
+<  :-
+@>
+@>=
+@<
+@<=
+"
+;
+.
+$
+@
+\
+ 
+,
+'
+:
+!
+%=%
+	
+//esto es un comentario
+/*esto es un comentario de 
+varias lineas*/
+"esto es un texto en primera forma"
+'esto es un texto en segunda forma'
+(
+~15e
+~12.

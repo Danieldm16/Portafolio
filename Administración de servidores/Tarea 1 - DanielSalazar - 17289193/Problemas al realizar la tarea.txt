@@ -1,0 +1,7 @@
+Profesor tuve problemas al intentar instalar el sistema operativo en una maquina virtual,
+lo intente con ubuntu y con debian, pero ninguno de los dos funciono y sucedia el mismo
+problema, estuve buscando soluciones y no existen como tal más que dar más memoria de video
+péro al hacerlo aun así sigue sucediendo el problema, le añado un video de evidencia de lo
+sucedido grabando la maquina virtual, y para no dejarlo así instale el nginx en windows y
+lo utilice para poder sacar la captura de evidencia, si me puede ayudar con el problema 
+estaría genial o si esta bien utilizarlo en windows igual muchas gracias.
