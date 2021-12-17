@@ -1,6 +1,0 @@
-mysql-connector
-mysql-connector-python
-flask
-geopy
-certifi
-fpdf
