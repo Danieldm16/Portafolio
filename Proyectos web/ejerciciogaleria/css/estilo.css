@@ -1,0 +1,43 @@
+*{
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+#cabecera{
+    font: bold 1.3em verdana;
+    background-color: gray;
+}
+
+h1{
+    text-align: center;
+    padding: 0.5em;
+}
+
+#menu{
+    float: left;
+    width: 25%;
+    background-color: darkcyan;
+}
+
+#menu img{
+    height: 100px;
+    width: 35%;
+    margin: 5%;
+    cursor: pointer;
+}
+
+#principal{
+    float: left;
+    width: 75%;
+}
+
+#visor{
+    width: 60%;
+    margin: 10%;
+}
+
+#visor img{
+    height: 350px;
+    width: 350px;
+}

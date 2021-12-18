@@ -1,0 +1,50 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+
+
+.contenedorarriba{
+    text-align: center;
+    font-size: 30px;
+}
+
+.contenedor2{
+    width: 80%;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.mayusculas{
+
+	text-transform: uppercase;
+}
+
+.labels{
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+
+.inputs{
+	float: left;
+	width: 55%;
+	margin-top: 6px;
+}
+
+#radiobuttons{
+    border-radius: 5px;
+    border-color: black;
+}
+
+.boton{
+    text-align: center;
+}
+
+
+@media screen  and (max-width: 600px){
+	.inputs,.labels,input[type=submit]{
+		width: 100%;
+		margin-top: 0;
+	}
+    }

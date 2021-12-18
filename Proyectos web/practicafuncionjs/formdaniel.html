@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio Javascript</title>
+    <script src="js/funciones.js"></script>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+
+    <div id="container">
+
+        <form action="recoge_datos.php" method="POST" id="form" onsubmit="return validar">
+
+            <label for="finput">Entrada:</label>
+            <input type="text" id="finput" name="finput">
+
+            <input type="submit" value="Subir" id="f_submit" onclick="validar()">
+
+        </form>
+
+    </div>
+
+</body>
+</html>

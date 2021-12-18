@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test JQuery</title>
+    </head>
+    <body>
+
+        <form action="#" method="POST" accept-charset="utf-8">
+            <label for="texto">Maximo 200 caracteres</label><br>
+            <textarea name="datos" cols="100" rows="2" id="datos" maxlength="200"></textarea>
+            <span id="rchars">200</span> Caracteres que te quedan
+
+            <br><label for="texto">Maximo 200 caracteres</label><br>
+            <textarea name="datos" cols="100" rows="2" id="datos2" maxlength="200"></textarea>
+            <span id="rchars2">200</span> Caracteres que te quedan
+        </form>
+
+    <script src="js/jquery-3.6.0.js" charset="utf-8"></script>
+    </body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var maxlength=200;
+        $('#datos').keyup(function(event){
+            var textlen = maxlength - $(this).val().length;
+            $('#rchars').text(textlen);
+        });
+        $('#datos2').keyup(function(event){
+            var textlen = maxlength - $(this).val().length;
+            $('#rchars2').text(textlen);
+        });
+    });
+</script>

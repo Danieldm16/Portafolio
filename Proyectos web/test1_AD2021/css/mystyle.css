@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    color: #fff;
+}
+
+#contenedor{
+    width: 50%;
+    margin: 0 auto;
+    background: #2c2c2c;
+    padding: 30px;
+}
+
+#contenedor h1{
+    font-size: 30px;
+}
+
+#contenedor forma{
+    margin: 20px;
+}
+
+#forma p{
+    width: 240px;
+    margin-top: 12px;
+}
+
+input[type="text"],input[type="email"],input[type="date"],select,textarea{
+    margin-top: 2px;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 35 px;
+}
+
+textarea{
+    height: 80px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    background: repeating-linear-gradient(#144c83,#2da8ea);
+}
+
+input[type="submit"]:hover{
+    background: repeating-linear-gradient(#2da8ea,#144c83);
+    color: red;
+    font-size: 15px;
+}
+
+.botonSubmit{
+    text-align: center;
+}
+
+/*media queries para responsividad*/
+/*screen tablets*/
+@media only screen and (min-width: 701px) and (max-width: 980px){
+    #contenedor{
+        width: 70%;
+        margin: 0 auto;
+        background: red;
+    }
+}
+
+/*smartphones*/
+@media only screen and (min-width: 480px) and (max-width: 700px){
+    #contenedor{
+        width: 85%;
+        margin: 0 auto;
+        background: blue;
+    }
+}
